@@ -20,8 +20,22 @@ body {
     display: flex;
     width: 45%;
     height: 65%;
-    background-color: rgb(21, 21, 21);
+    background-color: rgb(19, 19, 19);
     border: solid 1px #6a18c8;
+    min-height: 600px;
+}
+
+.title {
+    animation: fade infinite 2s;
+}
+
+@keyframes fade {
+    0%, 100% {
+        color:rgb(101, 36, 192);
+    }
+    50% {
+        color: rgb(248, 240, 255);
+    }
 }
 
 .navbar {
@@ -29,15 +43,17 @@ body {
     flex-direction: column;
     height: 100%;
     /* border: solid red 1px; */
+    width: 40%;
     color: white;
     padding: 10px;
-    background-color: rgb(17, 17, 17);
+    background-color: rgb(15, 15, 15);
 }
 
 .navbar h2 {
     font-size: 20px;
     font-weight: 400;
     letter-spacing: 2px;
+    cursor: default;
 }
 
 .navbar p {
@@ -50,4 +66,30 @@ body {
     letter-spacing: 1px;
     color: white;
     cursor: pointer;
+    transition: all .3s;
+}
+
+.nav-button:hover {
+    color: rgb(133, 68, 225);
+    transition: all .3s;
+}
+
+.box {
+    color: rgb(101, 36, 192);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+
+}
+
+.option {
+    width: 100%;
+}
+
+.option h2 {
+    width: 100%;
+    background-color: rgb(15, 15, 15);
+    animation: fade infinite 2s;
 }
