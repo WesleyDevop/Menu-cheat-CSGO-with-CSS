@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Menu Cheat</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <h2>CS:GO Cheat Menu</h2>
+            <a class="nav-button" onclick="openPage('Legit')">Legit
+            <p>Legit, Trigger</p></a>
+
+            <a class="nav-button" onclick="openPage('Visuals')">Visuals
+            <p>ESP, Glow, Chams, World, Screen</p></a>
+
+            <a class="nav-button" onclick="openPage('Misc')">Misc
+            <p>Movement, Colors</p></a>
+            
+            <a class="nav-button" onclick="openPage('Settings')">Settings
+            <p>Save Settings</p></a>
+        </nav>
+
+        <div id="Legit" class="city">
+            <h2>Legit</h2>
+          </div>
+          
+          <div id="Visuals" class="city" style="display:none">
+            <h2>Visuals</h2>
+          </div>
+          
+          <div id="Misc" class="city" style="display:none">
+            <h2>Misc</h2>
+          </div>
+    
+          <div id="Settings" class="city" style="display:none">
+            <h2>Settings</h2>
+          </div>
+    </div>
+
+    <script src="pagination.js"></script>
+</body>
+</html>
